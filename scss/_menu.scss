@@ -1,0 +1,88 @@
+.menu {
+  .menu-nav {
+    list-style: none;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 45vw;
+    height: 100vh;
+    background: darken($dark-grey, 5);
+    @include easeOut;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transform: translate3d(100%, 0, 0);
+    overflow: hidden;
+    z-index: 2;
+
+    .nav-link {
+      padding-top: 5rem;
+
+      & a {
+        text-decoration: none;
+        color: $white;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 1.2rem;
+        @include font;
+
+        &:hover,
+        &:focus {
+          color: #ffd700;
+        }
+      }
+    }
+
+    &.show {
+      visibility: visible;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+
+.headings {
+  padding: 6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.7;
+  font-weight: 400;
+
+  & h1 {
+    font-size: 5.5rem;
+    margin-top: 3.5vh;
+  }
+  & h2 {
+    font-size: 1.8rem;
+    line-height: 1;
+    color: $white;
+    margin-bottom: 2.5rem;
+    @include font;
+    font-weight: 400;
+  }
+}
+
+.btn1 {
+  text-align: center;
+  .btn {
+    padding: 1.3rem;
+    border: none;
+    background: darken($light-blue, 9);
+    color: $white;
+    font-weight: 400;
+    font-size: 1rem;
+    @include boxShadow;
+    border-radius: 10px;
+    @include easeOut;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      background: blue;
+    }
+  }
+}

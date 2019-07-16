@@ -1,0 +1,64 @@
+//Tablets and small laptops
+
+@include mediaMd {
+  .headings {
+    & h1 {
+      font-size: 6.5rem;
+    }
+    & h2 {
+      font-size: 2.2rem;
+      margin-bottom: 3.5rem;
+    }
+  }
+
+  .btn1 {
+    .btn {
+      padding: 1.5rem;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+//Large laptops and screens
+
+@include mediaLg {
+  .headings {
+    & h1 {
+      font-size: 7.5rem;
+    }
+    & h2 {
+      font-size: 2.7rem;
+      margin-bottom: 3.5rem;
+    }
+  }
+  .btn1 {
+    .btn {
+      padding: 1.8rem;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+//Smartphones and small screens
+
+@include mediaSm {
+  .headings {
+    padding: 9rem 2rem;
+    line-height: 2;
+
+    & h1 {
+      font-size: 4.1rem;
+    }
+    &h2 {
+      font-size: 1rem;
+    }
+  }
+  .btn1 {
+    .btn {
+      padding: 1.2rem;
+      font-size: 1rem;
+    }
+  }
+}
+
+//callout section//
